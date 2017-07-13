@@ -65,7 +65,7 @@
 
 }
 
-@media (max-width: 340px) {
+@media (max-width: 380px) {
 
     .flip-items > li {
         width: 150px;
