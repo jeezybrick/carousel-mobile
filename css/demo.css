@@ -17,6 +17,7 @@ section {
 }
 
 .open-nav-button {
+    z-index: 1000;
     font-size: 30px;
     cursor: pointer;
 }

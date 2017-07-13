@@ -18,6 +18,14 @@
     }
 }
 
+@media (max-width: 568px) {
+
+    .flip-items > li {
+        width: 230px;
+        height: 230px;
+    }
+}
+
 @media (max-width: 500px) {
 
     .flip-items > li {
