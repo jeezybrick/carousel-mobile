@@ -13,7 +13,23 @@
 @media (max-width: 768px) {
 
     .flip-items > li {
-        width: 250px;
+        width: 365px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .flip-items > li {
+        width: 320px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .flip-items > li {
+        width: 280px;
         height: 200px;
     }
 }
@@ -21,12 +37,16 @@
 @media (max-width: 568px) {
 
     .flip-items > li {
-        width: 230px;
-        height: 230px;
+        width: 270px;
+        height: 200px;
     }
 }
 
 @media (max-width: 500px) {
+
+    .flipster__button {
+        top:40%;
+    }
 
     .flip-items > li {
         width: 200px;
@@ -39,6 +59,10 @@
     .flip-items > li {
         width: 180px;
         height: 180px;
+    }
+
+    .flipster__button {
+        top:40%;
     }
 
     .flipster__button > .circle {
@@ -68,8 +92,16 @@
 @media (max-width: 380px) {
 
     .flip-items > li {
-        width: 150px;
+        width: 180px;
         height: 150px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .flip-items > li {
+        width: 155px;
+        height: 130px;
     }
 }
 

@@ -68,6 +68,10 @@ section {
     margin-left: -10px;
 }
 
+.flipster__item--future-2,.flipster__item--past-2 {
+    visibility: hidden;
+}
+
 #backdrop-wrapper {
     position: absolute;
     top: 0;
