@@ -590,7 +590,7 @@
             function touchEvents(elem) {
                 if ( settings.touch ) {
                     var _startDragY = false,
-                        _touchJump = throttle(jump, 300),
+                        _touchJump = throttle(jump, 50),
                         x, y, offsetY, offsetX;
 
                     elem.on({
@@ -610,17 +610,14 @@
                                 offsetY = y - _startDragY;
                                 offsetX = x - _startDrag;
 
-                                console.log('offsetY '+ offsetY);
-                                console.log('offsetX '+ offsetX);
-
-                                if ( Math.abs(offsetY) < 100 && Math.abs(offsetX) >= 7 ) {
+                                if ( Math.abs(offsetY) < 200 && Math.abs(offsetX) >= 0 ) {
                                     _touchJump((offsetX < 0 ? 'next' : 'prev'));
                                     _startDrag = x;
                                     e.preventDefault();
                                 }
 
                             }
-                        }, 100),
+                        }, 0),
 
                         'touchend.flipster touchcancel.flipster ': function() { _startDrag = false; }
                     });
