@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    -ms-touch-action: manipulation !important;
+    padding: 0 5px;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    margin-top: -220px;
+}
+
+.open-nav-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prototype-text {
+    padding: 0 5px;
+}
+
+.flip-items img {
+    object-fit: cover;
+}
+
+.flipster__button {
+    opacity: 0.7;
+}
+
+.flipster__button > .circle {
+    width: 70px;
+    height: 70px;
+    margin-top: -30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ccc;
+    position: relative;
+    border: none;
+}
+
+.flipster__button > .circle:before {
+    content: '';
+    display: block;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.flipster__button--prev > .circle:before {
+    border-right: solid 30px #333333;
+}
+
+.flipster__button--next > .circle:before {
+    border-left: solid 30px #333333;
+    margin-left: -10px;
+}
+
+#backdrop-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-align: right;
+}
+

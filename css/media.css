@@ -1,0 +1,76 @@
+@media (max-height: 500px) {
+
+    .prototype-text {
+        display: none;
+    }
+
+    section {
+        height: 300px;
+        margin-top: -125px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .flip-items > li {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .flip-items > li {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .flip-items > li {
+        width: 180px;
+        height: 180px;
+    }
+
+    .flipster__button > .circle {
+        width: 40px;
+        height: 40px;
+        margin-top: -15px;
+    }
+
+    .flipster__button > .circle:before {
+        border-top: solid 10px transparent;
+        border-bottom: solid 10px transparent;
+        margin-top: -10px;
+        margin-left: -8px;
+    }
+
+    .flipster__button--prev > .circle:before {
+        border-right: solid 15px #333333;
+    }
+
+    .flipster__button--next > .circle:before {
+        border-left: solid 15px #333333;
+        margin-left: -5px;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    .flip-items > li {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
